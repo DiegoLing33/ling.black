@@ -11,7 +11,7 @@
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 import React from "react";
-import {PropsWithClassName} from "../../../../core/shared/props";
+import {createClassName, PropsWithClassName} from "../../../../core/shared/props";
 import "./Panel.scss";
 
 export type PanelProps = React.PropsWithChildren<PropsWithClassName<{
@@ -21,8 +21,9 @@ export type PanelProps = React.PropsWithChildren<PropsWithClassName<{
 }>>;
 
 export default function Panel(props: PanelProps) {
+    const realClassName = createClassName("panel", props.className);
     return (
-        <div className={"panel"}>
+        <div className={realClassName}>
             {props.image && (
                 <img className={"panel-image"}
                      src={props.image}

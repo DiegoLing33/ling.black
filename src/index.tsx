@@ -2,20 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './core/styles/index.scss';
 import * as serviceWorker from './serviceWorker';
-import IndexPage from "./core/pages/IndexPage";
 import AppWrapper from "./modules/template/components/AppWrapper";
 import AppNavigation from "./modules/template/components/AppNavigation";
 import MusicPage from "./modules/music/pages/MusicPage";
+import IndexPage from "./core/pages/IndexPage";
 
 function App() {
     return (
         <div>
             <AppNavigation/>
             <AppWrapper>
-                <AppWrapper.Container>
                     {/*<IndexPage/>*/}
                     <MusicPage />
-                </AppWrapper.Container>
             </AppWrapper>
         </div>
     );
