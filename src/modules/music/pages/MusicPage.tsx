@@ -1,4 +1,4 @@
-/*!+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  + ██╗░░░░░██╗███╗░░██╗░██████╗░░░░██████╗░██╗░░░░░░█████╗░░█████╗░██╗░░██╗ +
  + ██║░░░░░██║████╗░██║██╔════╝░░░░██╔══██╗██║░░░░░██╔══██╗██╔══██╗██║░██╔╝ +
  + ██║░░░░░██║██╔██╗██║██║░░██╗░░░░██████╦╝██║░░░░░███████║██║░░╚═╝█████═╝░ +
@@ -10,45 +10,27 @@
  + @site http://ling.black                                                  +
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-body{
-  background-color: black;
-  color: #f0f0f0;
-}
+import React from "react";
+import {Col, Row} from "react-bootstrap";
+import landingImage from "../images/band-land.jpg";
+import Panel from "../../panels/components/Panel";
 
-.bg{
-  background-image: url("/img/bg.jpg");
-  background-color: black;
-  opacity: 0.1;
-  background-position: 60% center;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.navbar{
-  z-index: 100;
-  background-color: #111;
-}
-
-.context-brand{
-  display: block;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.header-info{
-  font-size: 0.86em;
-  color: #e5e5e5;
-}
-
-
-@media (max-width: 500px) {
-  .context-brand{
-    text-align: center;
-  }
-
+export default function MusicPage(){
+    return (
+        <div>
+            <Row>
+                <Col md={12}>
+                   <Panel image={landingImage} imageAlt={"Band image"} title={"Diego Ling • Band"}>
+                       <div className={"mb-3"}>
+                           <div>Alternative music band owned in 2019</div>
+                           <div>Record label: The Ling Records (Ling Black Records)</div>
+                       </div>
+                        <div>
+                            ...
+                        </div>
+                   </Panel>
+                </Col>
+            </Row>
+        </div>
+    );
 }

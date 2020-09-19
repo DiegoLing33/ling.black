@@ -1,4 +1,4 @@
-/*!+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  + ██╗░░░░░██╗███╗░░██╗░██████╗░░░░██████╗░██╗░░░░░░█████╗░░█████╗░██╗░░██╗ +
  + ██║░░░░░██║████╗░██║██╔════╝░░░░██╔══██╗██║░░░░░██╔══██╗██╔══██╗██║░██╔╝ +
  + ██║░░░░░██║██╔██╗██║██║░░██╗░░░░██████╦╝██║░░░░░███████║██║░░╚═╝█████═╝░ +
@@ -10,45 +10,5 @@
  + @site http://ling.black                                                  +
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-body{
-  background-color: black;
-  color: #f0f0f0;
-}
-
-.bg{
-  background-image: url("/img/bg.jpg");
-  background-color: black;
-  opacity: 0.1;
-  background-position: 60% center;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.navbar{
-  z-index: 100;
-  background-color: #111;
-}
-
-.context-brand{
-  display: block;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.header-info{
-  font-size: 0.86em;
-  color: #e5e5e5;
-}
-
-
-@media (max-width: 500px) {
-  .context-brand{
-    text-align: center;
-  }
-
-}
+import Panel from "./Panel";
+export default Panel;

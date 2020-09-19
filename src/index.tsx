@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import IndexPage from "./core/pages/IndexPage";
 import AppWrapper from "./modules/template/components/AppWrapper";
 import AppNavigation from "./modules/template/components/AppNavigation";
+import MusicPage from "./modules/music/pages/MusicPage";
 
 function App() {
     return (
@@ -12,7 +13,8 @@ function App() {
             <AppNavigation/>
             <AppWrapper>
                 <AppWrapper.Container>
-                    <IndexPage/>
+                    {/*<IndexPage/>*/}
+                    <MusicPage />
                 </AppWrapper.Container>
             </AppWrapper>
         </div>

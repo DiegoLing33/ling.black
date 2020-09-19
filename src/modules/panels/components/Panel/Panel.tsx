@@ -1,4 +1,4 @@
-/*!+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  + ██╗░░░░░██╗███╗░░██╗░██████╗░░░░██████╗░██╗░░░░░░█████╗░░█████╗░██╗░░██╗ +
  + ██║░░░░░██║████╗░██║██╔════╝░░░░██╔══██╗██║░░░░░██╔══██╗██╔══██╗██║░██╔╝ +
  + ██║░░░░░██║██╔██╗██║██║░░██╗░░░░██████╦╝██║░░░░░███████║██║░░╚═╝█████═╝░ +
@@ -10,45 +10,30 @@
  + @site http://ling.black                                                  +
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-body{
-  background-color: black;
-  color: #f0f0f0;
-}
+import React from "react";
+import {PropsWithClassName} from "../../../../core/shared/props";
+import "./Panel.scss";
 
-.bg{
-  background-image: url("/img/bg.jpg");
-  background-color: black;
-  opacity: 0.1;
-  background-position: 60% center;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
+export type PanelProps = React.PropsWithChildren<PropsWithClassName<{
+    image?: string;
+    imageAlt?: string;
+    title?: string;
+}>>;
 
-.navbar{
-  z-index: 100;
-  background-color: #111;
-}
-
-.context-brand{
-  display: block;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.header-info{
-  font-size: 0.86em;
-  color: #e5e5e5;
-}
-
-
-@media (max-width: 500px) {
-  .context-brand{
-    text-align: center;
-  }
-
+export default function Panel(props: PanelProps) {
+    return (
+        <div className={"panel"}>
+            {props.image && (
+                <img className={"panel-image"}
+                     src={props.image}
+                     alt={props.imageAlt}/>
+            )}
+            <div className={"panel-body"}>
+                {props.title && (
+                    <div className={"panel-title"}>{props.title}</div>
+                )}
+                {props.children}
+            </div>
+        </div>
+    );
 }
