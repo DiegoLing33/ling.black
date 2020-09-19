@@ -2,7 +2,7 @@
 
 The official Ling black web application
 
-``
+```
 ██╗░░░░░██╗███╗░░██╗░██████╗░░░░██████╗░██╗░░░░░░█████╗░░█████╗░██╗░░██╗
 ██║░░░░░██║████╗░██║██╔════╝░░░░██╔══██╗██║░░░░░██╔══██╗██╔══██╗██║░██╔╝
 ██║░░░░░██║██╔██╗██║██║░░██╗░░░░██████╦╝██║░░░░░███████║██║░░╚═╝█████═╝░
@@ -12,4 +12,4 @@ The official Ling black web application
 
 Developed by Yakov V. Panov (C) Ling • Black 2020
 @site http://ling.black
-``
+```
