@@ -1,0 +1,70 @@
+/*!+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ + ██╗░░░░░██╗███╗░░██╗░██████╗░░░░██████╗░██╗░░░░░░█████╗░░█████╗░██╗░░██╗ +
+ + ██║░░░░░██║████╗░██║██╔════╝░░░░██╔══██╗██║░░░░░██╔══██╗██╔══██╗██║░██╔╝ +
+ + ██║░░░░░██║██╔██╗██║██║░░██╗░░░░██████╦╝██║░░░░░███████║██║░░╚═╝█████═╝░ +
+ + ██║░░░░░██║██║╚████║██║░░╚██╗░░░██╔══██╗██║░░░░░██╔══██║██║░░██╗██╔═██╗░ +
+ + ███████╗██║██║░╚███║╚██████╔╝░░░██████╦╝███████╗██║░░██║╚█████╔╝██║░╚██╗ +
+ + ╚══════╝╚═╝╚═╝░░╚══╝░╚═════╝░░░░╚═════╝░╚══════╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝ +
+ +                                                                          +
+ + Developed by Yakov V. Panov (C) Ling • Black 2020                        +
+ + @site http://ling.black                                                  +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+body{
+  background-color: black;
+  color: #f0f0f0;
+}
+
+.app{
+  margin-top: 50px;
+}
+
+.bg{
+  background-image: url("/img/bg.jpg");
+  background-color: black;
+  opacity: 0.6;
+  background-position: 60% center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.navbar{
+  z-index: 100;
+  background-color: #111;
+}
+
+.context-brand{
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+
+.header-info{
+  font-size: 0.86em;
+  color: #e5e5e5;
+}
+
+.header-section a{
+  display: block;
+}
+
+.header-section a{
+  text-decoration: none !important;
+  color: inherit;
+}
+
+
+
+@media (max-width: 500px) {
+  .context-brand{
+    text-align: center;
+  }
+
+}
